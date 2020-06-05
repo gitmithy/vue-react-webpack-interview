@@ -46,7 +46,7 @@ export default {
         // eslint-disable-next-line
         console.log('list mounted')
 
-        // 绑定自定义事件
+        // 绑定自定义事件,接收onAddTitle，触发addTitleHandler事件
         event.$on('onAddTitle', this.addTitleHandler)
     },
     beforeUpdate() {

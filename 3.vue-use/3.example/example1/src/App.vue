@@ -23,7 +23,7 @@
 // 3.2
 // import ComputedDemo from './components/3.2ComputedDemo.vue'
 // 3.2
-import ComponentsDemo from './components/3.3ComponentsDemo/index'
+import ComponentsDemo from './components/3.3-3.5ComponentsDemo/index'
 // import ConditionDemo from './components/BaseUse/ConditionDemo'
 // import EventDemo from './components/BaseUse/EventDemo'
 
