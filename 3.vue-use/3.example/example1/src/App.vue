@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
 
-    <ComponentsDemo/>
+    <AdvancedUse />
     <!-- <ConditionDemo/> -->
     <!-- <EventDemo/> -->
 
@@ -16,14 +16,12 @@
 </template>
 
 <script>
-
-
 // 3.2
 // import TplDemo from './components/3.2TplDemo'index
 // 3.2
 // import ComputedDemo from './components/3.2ComputedDemo.vue'
 // 3.2
-import ComponentsDemo from './components/3.3-3.5ComponentsDemo/index'
+import AdvancedUse from "./components/AdvancedUse/index.vue";
 // import ConditionDemo from './components/BaseUse/ConditionDemo'
 // import EventDemo from './components/BaseUse/EventDemo'
 
@@ -34,16 +32,16 @@ import ComponentsDemo from './components/3.3-3.5ComponentsDemo/index'
 // import CartDemo from './components/Cart/index'
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    ComponentsDemo
+    AdvancedUse
     // HelloWorld
     // EventDemo
     // ComponentDemo
     // AdvancedUse
     // CartDemo
   }
-}
+};
 </script>
 
 <style>
