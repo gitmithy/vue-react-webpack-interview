@@ -4,11 +4,17 @@
         <button @click="changeState('B')">B</button>
         <button @click="changeState('C')">C</button>
 
-        <keep-alive> <!-- tab 切换 -->
+        <keep-alive>
+             <!-- tab 切换 -->
             <KeepAliveStageA v-if="state === 'A'"/> <!-- v-show -->
             <KeepAliveStageB v-if="state === 'B'"/>
             <KeepAliveStageC v-if="state === 'C'"/>
+
+
+            
         </keep-alive>
+    
+    
     </div>
 </template>
 

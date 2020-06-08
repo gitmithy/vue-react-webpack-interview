@@ -8,50 +8,56 @@
     <CustomVModel v-model="name" />-->
 
     <!-- nextTick -->
-    <NextTick />
+    <!-- <NextTick /> -->
 
     <!-- slot -->
     <!-- <SlotDemo :url="website.url">
             {{website.title}}
-    </SlotDemo>-->
+    </SlotDemo> -->
     <!-- <ScopedSlotDemo :url="website.url">
             <template v-slot="slotProps">
                 {{slotProps.slotData.title}}
             </template>
-    </ScopedSlotDemo>-->
+    </ScopedSlotDemo> -->
 
     <!-- 动态组件 -->
     <!-- <component :is="NextTickName"/> -->
+    <!-- <div v-for="(val, key) in newsData" :key="key">
+      <component :is="val.type"  />
+    </div>
+    <div v-for="(item, index) in newsData" :key="index">
+      <component :is="item.type"  />
+    </div>     -->
 
     <!-- 异步组件 -->
     <!-- <FormDemo v-if="showFormDemo"/>
-    <button @click="showFormDemo = true">show form demo</button>-->
+    <button @click="showFormDemo = true">show form demo</button> -->
 
     <!-- keep-alive -->
     <!-- <KeepAlive/> -->
 
     <!-- mixin -->
-    <!-- <MixinDemo /> -->
+    <MixinDemo />
   </div>
 </template>
 
 <script>
 // import CustomVModel from "./CustomVModel";
-import NextTick from "./NextTick";
+// import NextTick from "./NextTick";
 // import SlotDemo from './SlotDemo'
 // import ScopedSlotDemo from './ScopedSlotDemo'
 // import KeepAlive from './KeepAlive'
-// import MixinDemo from "./MixinDemo";
+import MixinDemo from "./MixinDemo";
 
 export default {
   components: {
-    NextTick
+    // NextTick
     // NextTick
     // SlotDemo,
     // ScopedSlotDemo,
-    // FormDemo: () => import('../BaseUse/FormDemo'),
+    // FormDemo: () => import('../3.2FormDemo.vue'),
     // KeepAlive
-    // MixinDemo
+    MixinDemo
   },
   data() {
     return {
@@ -61,8 +67,13 @@ export default {
         title: "imooc",
         subTitle: "程序员的梦工厂"
       },
-      // NextTickName: "NextTick",
-      showFormDemo: false
+      newsData:[
+        {type:'text'},
+        {type:'text'},
+        {type:'image'},
+      ],
+      // NextTickName: "NextTick"
+      // showFormDemo: false
     };
   }
 };
