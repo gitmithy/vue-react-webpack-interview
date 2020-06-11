@@ -7,7 +7,7 @@ const compiler = require('vue-template-compiler')
 // createElement -> vnode
 
 // // 表达式
-// const template = `<p>{{flag ? message : 'no message found'}}</p>`
+const template = `<p>{{flag ? message : 'no message found'}}</p>`
 // // with(this){return _c('p',[_v(_s(flag ? message : 'no message found'))])}
 
 // // 属性和动态属性
